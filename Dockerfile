@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1.2
 # Use an official Node.js runtime as a parent image
 FROM node:latest
 
@@ -18,7 +19,8 @@ WORKDIR /microservice
 COPY package.json pnpm-lock.yaml ./
 
 # Install dependencies
-RUN --mount=type=secret,id=npm-token,target=/root/.npmrc && pnpm install
+RUN --mount=type=secret,id=npm-token,target=/root/.npmrc
+RUN pnpm install
 
 # Copy the rest of the application code
 COPY . .
