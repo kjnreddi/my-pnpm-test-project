@@ -4,7 +4,7 @@ FROM node:16
 ADD package.json /tmp/package.json
 # Set the working directory in the container
 RUN --mount=type=secret,id=npm-token,target=/root/.npmrc
-RUN cd /tmp && npm install -g pnpm && mkdir -p /microservice && cp -a /tmp/node_modules /microservice
+RUN cd /tmp && npm install -g pnpm && pnpm --version && pnpm install && mkdir -p /microservice && cp -a /tmp/node_modules /microservice
 
 WORKDIR /microservice
 ADD . /microservice
