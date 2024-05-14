@@ -5,7 +5,6 @@ ADD package.json /tmp/package.json
 # Set the working directory in the container
 RUN --mount=type=secret,id=npm-token,target=/root/.npmrc
 RUN cd /tmp && npm install -g pnpm && pnpm --version && pnpm install && mkdir -p /microservice
-RUN mv node_modules /microservice/node_modules
 RUN cp -a . /microservice
 
 WORKDIR /microservice
