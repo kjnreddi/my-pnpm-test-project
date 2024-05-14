@@ -12,8 +12,8 @@ importers:
         specifier: ^4.19.2
         version: 4.19.2
       lodash:
-        specifier: 4.17.21
-        version: 4.17.21
+        specifier: 4.11.0
+        version: 4.11.0
 
 packages:
 
@@ -149,8 +149,8 @@ packages:
     resolution: {integrity: sha512-0KI/607xoxSToH7GjN1FfSbLoU0+btTicjsQSWQlh/hZykN8KpmMf7uYwPW3R+akZ6R/w18ZlXSHBYXiYUPO3g==}
     engines: {node: '>= 0.10'}
 
-  lodash@4.17.21:
-    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+  lodash@4.11.0:
+    resolution: {integrity: sha512-18uE0HVAF7WGaXB37G3yJdx1M39bez8eCHPP+NCfOPzDbcP1XqqrVz6EuF2Ip2Ye/Hcmhvy1bGUGUDOGNzsHPw==}
 
   media-typer@0.3.0:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
@@ -433,7 +433,7 @@ snapshots:
 
   ipaddr.js@1.9.1: {}
 
-  lodash@4.17.21: {}
+  lodash@4.11.0: {}
 
   media-typer@0.3.0: {}
 
