@@ -22,9 +22,6 @@ COPY package.json pnpm-lock.yaml ./
 RUN --mount=type=secret,id=npm-token,target=/root/.npmrc
 RUN pnpm install
 
-# Copy the rest of the application code
-COPY . .
-
 # Expose the application port (replace 3000 with your application's port if different)
 EXPOSE 3000
 
