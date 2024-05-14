@@ -17,6 +17,7 @@ WORKDIR /microservice
 
 # Copy package.json and pnpm-lock.yaml to install dependencies
 COPY package.json pnpm-lock.yaml ./
+COPY index.js ./
 
 # Install dependencies
 RUN --mount=type=secret,id=npm-token,target=/root/.npmrc
